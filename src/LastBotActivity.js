@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown';
+// import ReactMarkdown from 'react-markdown';
 
 import { connectToWebChat, Components } from 'botframework-webchat';
 
@@ -21,7 +21,7 @@ export default connectToWebChat(
 )(({ activity, className }) =>
   !!activity &&
     <React.Fragment className={ className }>
-      <ReactMarkdown>{ activity.text.includes("No QnA Maker answers were found.") ? msg : activity.text }</ReactMarkdown>
+      <p>{ activity.text.includes("No QnA Maker answers were found.") ? msg : activity.text }</p>
       { activity.channelData && activity.channelData.speak && <SpeakActivity activity={ activity } /> }
     </React.Fragment>
 )
