@@ -13,7 +13,6 @@ import LastBotActivity from './LastBotActivity';
 
 import Header from './demo/src/Header';
 import Footer from './demo/src/Footer';
-import { Grid } from 'semantic-ui-react';
 
 const { Composer } = Components;
 
